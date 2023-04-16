@@ -3,7 +3,7 @@ from telegram.ext import Updater, CommandHandler, MessageHandler, Filters, Callb
 
 def start(update: Update, context: CallbackContext) -> None:
     # yalnızca belirli bir kullanıcı id'sine cevap verin
-    if update.message.chat_id != YOUR_CHAT_ID:5291833531
+    if update.message.chat_id != YOUR_CHAT_ID:
         return
     
     context.user_data['link'] = None
@@ -14,7 +14,7 @@ def start(update: Update, context: CallbackContext) -> None:
 
 def receive_link(update: Update, context: CallbackContext) -> None:
     # yalnızca belirli bir kullanıcı id'sine cevap verin
-    if update.message.chat_id != YOUR_CHAT_ID:5291833531
+    if update.message.chat_id != YOUR_CHAT_ID:
         return
     
     link = update.message.text
@@ -23,7 +23,7 @@ def receive_link(update: Update, context: CallbackContext) -> None:
 
 def receive_score(update: Update, context: CallbackContext) -> None:
     # yalnızca belirli bir kullanıcı id'sine cevap verin
-    if update.message.chat_id != YOUR_CHAT_ID:5291833531
+    if update.message.chat_id != YOUR_CHAT_ID:
         return
     
     score = update.message.text
@@ -32,7 +32,7 @@ def receive_score(update: Update, context: CallbackContext) -> None:
 
 def receive_time(update: Update, context: CallbackContext) -> None:
     # yalnızca belirli bir kullanıcı id'sine cevap verin
-    if update.message.chat_id != YOUR_CHAT_ID:5291833531
+    if update.message.chat_id != YOUR_CHAT_ID:
         return
     
     time = update.message.text
