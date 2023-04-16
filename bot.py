@@ -3,7 +3,7 @@ from telegram.ext import Updater, CommandHandler, MessageHandler, Filters, Callb
 
 def start(update: Update, context: CallbackContext) -> None:
     # yalnızca belirli bir kullanıcı id'sine cevap verin
-    if update.message.chat_id != YOUR_CHAT_ID:
+    if update.message.chat_id != YOUR_CHAT_ID:5291833531
         return
     
     context.user_data['link'] = None
@@ -14,7 +14,7 @@ def start(update: Update, context: CallbackContext) -> None:
 
 def receive_link(update: Update, context: CallbackContext) -> None:
     # yalnızca belirli bir kullanıcı id'sine cevap verin
-    if update.message.chat_id != YOUR_CHAT_ID:
+    if update.message.chat_id != YOUR_CHAT_ID:5291833531
         return
     
     link = update.message.text
@@ -23,7 +23,7 @@ def receive_link(update: Update, context: CallbackContext) -> None:
 
 def receive_score(update: Update, context: CallbackContext) -> None:
     # yalnızca belirli bir kullanıcı id'sine cevap verin
-    if update.message.chat_id != YOUR_CHAT_ID:
+    if update.message.chat_id != YOUR_CHAT_ID:5291833531
         return
     
     score = update.message.text
@@ -32,7 +32,7 @@ def receive_score(update: Update, context: CallbackContext) -> None:
 
 def receive_time(update: Update, context: CallbackContext) -> None:
     # yalnızca belirli bir kullanıcı id'sine cevap verin
-    if update.message.chat_id != YOUR_CHAT_ID:
+    if update.message.chat_id != YOUR_CHAT_ID:5291833531
         return
     
     time = update.message.text
@@ -60,7 +60,7 @@ def stop(update: Update, context: CallbackContext) -> None:
 
 def main():
     global updater
-    updater = Updater(token='TOKENINIZ', use_context=True)
+    updater = Updater(token='6121066413:AAHtdPHa-F54RN-HYb3fmOpuzBzifCpvqwM', use_context=True)
 
     updater.dispatcher.add_handler(CommandHandler('start', start))
     updater.dispatcher.add_handler(MessageHandler(Filters.regex(r'^https?://'), receive_link))
