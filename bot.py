@@ -1,5 +1,5 @@
 from telegram import Update
-from telegram.ext import Updater, CommandHandler, MessageHandler, Filters, CallbackContext
+from telegram.ext import *
 
 YOUR_CHAT_ID = 5291833531  # kullanıcı ID'nizi buraya girin
 
