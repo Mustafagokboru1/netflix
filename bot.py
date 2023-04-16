@@ -1,6 +1,8 @@
 from telegram import Update
 from telegram.ext import Updater, CommandHandler, MessageHandler, Filters, CallbackContext
 
+YOUR_CHAT_ID = 5291833531  # kendi chat ID'nizi buraya girin
+
 def start(update: Update, context: CallbackContext) -> None:
     # yalnızca belirli bir kullanıcı id'sine cevap verin
     if update.message.chat_id != YOUR_CHAT_ID:
