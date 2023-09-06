@@ -2,7 +2,7 @@ import requests
 from bs4 import BeautifulSoup
 
 # Site URL'sini belirleyin
-url = 'SİTENİZİN_URLSİ_BURAYA_GELECEK'
+url = 'minerkirala.org'
 
 # Siteye GET isteği gönderin
 response = requests.get(url)
